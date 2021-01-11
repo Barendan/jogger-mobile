@@ -1,0 +1,123 @@
+{
+  "Quest": {
+    "Craft": {
+      "Craft_Test": {
+        "QuestName": "Craft_Test",
+        "Description": "Become the medicine man. Always ready to bring health up!",
+        "Objective": "syringe.medical",
+        "ObjectiveName": "Medical Syringe",
+        "AmountRequired": 50,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Blueberries",
+            "ShortName": "blueberries",
+            "ID": -586342290,
+            "Amount": 10.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    "Delivery": {},
+    "Gather": {
+      "Hungry Child": {
+        "QuestName": "Hungry Child",
+        "Description": "Your child hasn't eaten in days. The hunger is real. Gather 500 mushrooms and feed them.",
+        "Objective": "mushroom",
+        "ObjectiveName": "Mushroom",
+        "AmountRequired": 500,
+        "Cooldown": 120,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": true,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "RP",
+            "ShortName": null,
+            "ID": 0,
+            "Amount": 500.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    "Kill": {
+      "Prized Stag Head": {
+        "QuestName": "Prized Stag Head",
+        "Description": "Track and hunt down 10 deer to obtain the best possible stag head.",
+        "Objective": "stag",
+        "ObjectiveName": "Stag",
+        "AmountRequired": 10,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": true,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "RP",
+            "ShortName": null,
+            "ID": 0,
+            "Amount": 100.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Assassin's Creed": {
+        "QuestName": "Assassin's Creed",
+        "Description": "You must eliminate 100 enemies to be the greatest Assassin.",
+        "Objective": "player",
+        "ObjectiveName": "Player",
+        "AmountRequired": 100,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": true,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "RP",
+            "ShortName": null,
+            "ID": 0,
+            "Amount": 500.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    "Loot": {
+      "Loot it all": {
+        "QuestName": "Loot it all",
+        "Description": "You must find enough blood to reanimate your dead girlfriend. No time to spare!",
+        "Objective": "blood",
+        "ObjectiveName": "Blood",
+        "AmountRequired": 10,
+        "Cooldown": 60,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Snowball",
+            "ShortName": "snowball",
+            "ID": -363689972,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    }
+  }
+}
