@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationEvents } from 'react-navigation';
 import AuthForm from '../components/AuthForm';
@@ -6,7 +6,13 @@ import NavLink from '../components/NavLink';
 import { Context } from '../context/AuthContext';
 
 const SigninScreen = () => {
-  const { state, signin, clearErrorMessage } = useContext(Context);
+  const { state, signin, clearErrorMessage, tryLocalSignin } = useContext(
+    Context
+  );
+
+  useEffect(() => {
+    tryLocalSignin();
+  }, []);
 
   return (
     <View style={styles.container}>
@@ -18,8 +24,8 @@ const SigninScreen = () => {
         submitButtonText='Sign In'
       />
       <NavLink
-        text='Dont have an account? Sign up instead.'
         routeName='Signup'
+        text='Dont have an account? Sign up instead.'
       />
     </View>
   );
