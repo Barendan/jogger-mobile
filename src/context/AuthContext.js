@@ -19,8 +19,8 @@ const authReducer = (state, action) => {
 };
 
 const tryLocalSignin = (dispatch) => async () => {
-  //const token = await AsyncStorage.getItem('token');
-  const token = null;
+  const token = await AsyncStorage.getItem('token');
+  //const token = null;
   if (token) {
     dispatch({
       type: 'signin',
