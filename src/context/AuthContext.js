@@ -1,4 +1,4 @@
-import { AsyncStorage } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import createDataContext from './createDataContext';
 import trackerApi from '../api/tracker';
 import { navigate } from '../navigationRef';
@@ -19,7 +19,8 @@ const authReducer = (state, action) => {
 };
 
 const tryLocalSignin = (dispatch) => async () => {
-  const token = await AsyncStorage.getItem('token');
+  //const token = await AsyncStorage.getItem('token');
+  const token = null;
   if (token) {
     dispatch({
       type: 'signin',
